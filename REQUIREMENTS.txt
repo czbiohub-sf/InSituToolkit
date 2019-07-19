@@ -1,0 +1,2 @@
+starfish
+napari==0.0.6
