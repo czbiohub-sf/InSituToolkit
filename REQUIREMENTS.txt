@@ -1,2 +1,3 @@
-starfish
+starfish==0.1.4
 napari==0.0.6
+imagingDB @ git+https://github.com/czbiohub/imagingDB@add_setup#egg=imagingDB
