@@ -33,9 +33,12 @@ def get_numpy_stack(db_credentials: str, image_ids: str, channels, pos: int = 0,
 
     n_rounds = len(image_ids)
     n_channels = len(channels)
+    n_slices = 11
+    im_width = 2048
+    im_height = 2048
 
     im_stack = np.zeros((n_rounds, n_channels, n_slices, im_width, im_height), dtype='uint16')
-    for r, im in enumerate(image_id):
+    for r, im in enumerate(image_ids):
         for c, chan in enumerate(channels):
             im_stack[r, c, ...] = db.getStack(im, channel=chan, pos_idx=pos, time_idx=time)
 
