@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 
 import os
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 install_requires = [
-    line.rstrip() for line in open(os.path.join(os.path.dirname(__file__), "REQUIREMENTS.txt"))
+    line.rstrip() for line in open(
+      os.path.join(os.path.dirname(__file__), "REQUIREMENTS.txt")
+    )
 ]
-print(install_requires)
-#dependency_links = ['git+https://github.com/czbiohub/imagingDB.git@add_setup#egg=imagingDB']
-
 
 setup(name='InSituToolkit',
       install_requires=install_requires,
