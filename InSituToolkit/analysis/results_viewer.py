@@ -1,4 +1,5 @@
 import argparse
+from itertools import cycle
 
 import numpy as np
 import napari
@@ -151,6 +152,7 @@ def view_results(fov_df, exp):
     
     with napari.gui_qt():
         index = 0
+        colors = cycle('wgmcykb')
         viewer = napari.Viewer()
         
         fov_data = fov_df.loc[index]
@@ -161,7 +163,12 @@ def view_results(fov_df, exp):
         viewer.add_labels(mask, name='Segmentation Mask')
 
         for point in points:
-            viewer.add_points(point['coords'], name=point['name'], symbol='ring')
+            viewer.add_points(
+                point['coords'],
+                name=point['name'],
+                symbol='ring',
+                face_color=next(colors)
+            )
         
         viewer.status = str(index)
         
