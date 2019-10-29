@@ -1,4 +1,4 @@
-starfish==0.1.4
-napari==0.0.6
-imagingDB @ git+https://github.com/czbiohub/imagingDB@add_setup#egg=imagingDB
+starfish==0.1.8
+napari==0.2.0
+imagingDB @ git+https://github.com/czbiohub/imagingDB@master#egg=imagingDB
 spacetx_biohub_writer @ git+https://github.com/spacetx/spacetx-biohub-writer#egg=spacetx_biohub_writer

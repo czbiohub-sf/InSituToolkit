@@ -81,7 +81,7 @@ def make_experiment_csv(
                         rnd.append(r)
                         channel.append(chan_idx)
                         z.append(frame.slice_idx)
-                        file_path.append(os.path.join(frame.frames_global.s3_dir, frame.file_name))
+                        file_path.append(os.path.join(frame.frames_global.storage_dir, frame.file_name))
                         #sha.append(frame.sha256)
                         xc_min.append(frame.metadata_json[meta_keys['key']][meta_keys['xpos_um']])
                         xc_max.append(xc_min[-1] + im_width * pixel_size)
@@ -108,15 +108,12 @@ def _calc_checksums(file_names):
     checksums = []
 
     for file in file_names:
-        session = boto3.session.Session()
-        s3 = session.resource("s3", config=None)
-        bucket = s3.Bucket(S3_BUCKET)
-        s3_obj = bucket.Object(file)
-        buff = BytesIO()
-        s3_obj.download_fileobj(buff)
-        buff.seek(0)
-        
-        checksums.append(_calc_checksum(buff))
+        filename = os.path.join('/Volumes/imaging/czbiohub-imaging', file)
+        with open(filename,"rb") as f:
+            bytes = f.read() # read entire file as bytes
+            readable_hash = hashlib.sha256(bytes).hexdigest();
+
+            checksums.append(readable_hash)
 
     return checksums
 

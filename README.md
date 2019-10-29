@@ -20,6 +20,10 @@ Finally, install the InSituToolkit
 ```sh
 $ pip install -e .
 ```
+Currently, we need to use a custom version of `slicedimage`. Install it using the following:
+```sh
+$ pip install git+https://github.com/kevinyamauchi/slicedimage.git@add_png#egg=slicedimage --force-reinstall
+```
 
 ## Usage
 We have examples of how to use the toolkit in the examples directory.
