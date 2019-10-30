@@ -9,7 +9,7 @@ We recommend that you use a virtual environment such as virtualenv. If you do no
 
 Next, clone the master branch of this repository.
 ```sh
-$ git clone git@github.com:czbiohub/InSituToolkit.git
+$ git clone https://github.com/czbiohub/InSituToolkit.git
 ```
 Navigate into the InSituToolkit directory and create the virtual environment
 ```sh

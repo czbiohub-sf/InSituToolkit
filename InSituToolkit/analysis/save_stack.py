@@ -1,3 +1,4 @@
+import numpy as np
 from skimage import io, img_as_uint
 from starfish import ImageStack
 
