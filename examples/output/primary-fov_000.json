@@ -1,14 +1,14 @@
 {
-    "default_tile_format": "PNG",
+    "default_tile_format": "TIFF",
     "dimensions": [
-        "zc",
-        "z",
-        "c",
-        "x",
-        "r",
         "yc",
+        "z",
+        "y",
+        "zc",
         "xc",
-        "y"
+        "c",
+        "r",
+        "x"
     ],
     "extras": {},
     "shape": {

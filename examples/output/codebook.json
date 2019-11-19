@@ -1,1 +1,1 @@
-{"version": "0.0.0", "mappings": [{"codeword": [{"c": 0, "r": 0, "v": 1.0}], "target": "Opal570"}, {"codeword": [{"c": 1, "r": 0, "v": 1.0}], "target": "Opal620"}, {"codeword": [{"c": 2, "r": 0, "v": 1.0}], "target": "Opal690"}]}
+{"version": "0.0.0", "mappings": [{"codeword": [{"r": 0, "c": 0, "v": 1.0}], "target": "Opal570"}, {"codeword": [{"r": 0, "c": 1, "v": 1.0}], "target": "Opal620"}, {"codeword": [{"r": 0, "c": 2, "v": 1.0}], "target": "Opal690"}]}
