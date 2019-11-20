@@ -1,0 +1,13 @@
+{
+    "contents": {
+        "fov_000": "stain-fov_000.json",
+        "fov_001": "stain-fov_001.json",
+        "fov_002": "stain-fov_002.json",
+        "fov_003": "stain-fov_003.json",
+        "fov_004": "stain-fov_004.json",
+        "fov_005": "stain-fov_005.json",
+        "fov_006": "stain-fov_006.json"
+    },
+    "extras": null,
+    "version": "0.1.0"
+}

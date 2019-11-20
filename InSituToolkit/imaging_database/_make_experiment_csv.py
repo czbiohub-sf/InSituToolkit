@@ -1,6 +1,6 @@
 import os
-from io import BytesIO
 import hashlib
+from typing import List
 
 import boto3
 import pandas as pd
@@ -10,11 +10,11 @@ import imaging_db.utils.db_utils as db_utils
 
 from ._constants import metadata_keys
 
-S3_BUCKET = 'czbiohub-imaging'
 
 def make_experiment_csv(
-                        db_credentials:str, csv_file:str, image_ids, channels,
-                        metadata_format:str = 'micromanager', positions:int = [0], time:int=0
+                        db_credentials:str, csv_file:str, image_ids:List[str], channels:List[str],
+                        metadata_format:str = 'micromanager', positions:int = [0], time:int=0,
+                        data_path:str = '/Volumes/imaging/czbiohub-imaging'
                         ):
     """
     Creates a CSV file mapping imagingDB frames to indices in an ImageStack
@@ -37,6 +37,8 @@ def make_experiment_csv(
         Index of the position to download. The default value is 0.
     time : int
         Index of the time point to download. The default value is 0.
+    data_path : str
+        Path to the image store volume
     """
 
     meta_keys = metadata_keys[metadata_format.lower()]
@@ -81,8 +83,10 @@ def make_experiment_csv(
                         rnd.append(r)
                         channel.append(chan_idx)
                         z.append(frame.slice_idx)
-                        file_path.append(os.path.join(frame.frames_global.storage_dir, frame.file_name))
-                        #sha.append(frame.sha256)
+                        # Clean any windows file path seps before adding path
+                        fp = os.path.join(frame.frames_global.storage_dir, frame.file_name)
+                        clean_fp = os.path.join(*fp.split('\\'))
+                        file_path.append(clean_fp)
                         xc_min.append(frame.metadata_json[meta_keys['key']][meta_keys['xpos_um']])
                         xc_max.append(xc_min[-1] + im_width * pixel_size)
                         yc_min.append(frame.metadata_json[meta_keys['key']][meta_keys['ypos_um']])
@@ -92,7 +96,7 @@ def make_experiment_csv(
                         tile_width.append(im_width)
                         tile_height.append(im_height)
 
-    sha = _calc_checksums(file_path)
+    sha = _calc_checksums(file_path, data_path)
                     
     data = [fov, rnd, channel, z, file_path, sha, xc_min, xc_max, yc_min, yc_max, zc_min, zc_max, tile_width, tile_height]
     columns = [
@@ -104,11 +108,13 @@ def make_experiment_csv(
 
     return im_width, im_height
 
-def _calc_checksums(file_names):
+def _calc_checksums(file_names, data_path):
     checksums = []
 
     for file in file_names:
-        filename = os.path.join('/Volumes/imaging/czbiohub-imaging', file)
+        # We need to replace any windows file separators with the proper separator
+        cleaned_filename = os.path.join(*file.split('\\'))
+        filename = os.path.join(data_path, cleaned_filename)
         with open(filename,"rb") as f:
             bytes = f.read() # read entire file as bytes
             readable_hash = hashlib.sha256(bytes).hexdigest();
@@ -116,18 +122,3 @@ def _calc_checksums(file_names):
             checksums.append(readable_hash)
 
     return checksums
-
-def _calc_checksum(buff, block_size=1024*1024):
-    checksummer = hashlib.sha256()
-
-    assert buff.tell() == 0
-    while True:
-        data = buff.read(block_size)
-        checksummer.update(data)
-        if len(data) == 0:
-            calculated_checksum = checksummer.hexdigest()
-
-            break
-
-    return calculated_checksum
-

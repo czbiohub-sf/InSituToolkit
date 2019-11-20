@@ -1,8 +1,9 @@
 # InSituToolkit
 An installer for in situ transcriptomics image processing tools. This toolkits builds on top of many open source tools such as:
-- starfish
-- napari
 - imagingDB
+- napari
+- skimage
+- starfish
 
 ## Installation
 We recommend that you use a virtual environment such as virtualenv. If you do not have virtual environment installed, first install it:
@@ -19,10 +20,6 @@ $ python -m venv .venv
 Finally, install the InSituToolkit
 ```sh
 $ pip install -e .
-```
-Currently, we need to use a custom version of `slicedimage`. Install it using the following:
-```sh
-$ pip install git+https://github.com/kevinyamauchi/slicedimage.git@add_png#egg=slicedimage --force-reinstall
 ```
 
 ## Usage
