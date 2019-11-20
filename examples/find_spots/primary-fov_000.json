@@ -1,0 +1,722 @@
+{
+    "default_tile_format": "TIFF",
+    "dimensions": [
+        "xc",
+        "c",
+        "y",
+        "zc",
+        "r",
+        "x",
+        "yc",
+        "z"
+    ],
+    "extras": {},
+    "shape": {
+        "c": 1,
+        "r": 1,
+        "z": 25
+    },
+    "tiles": [
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1764.82417,
+                    1764.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z000_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 0
+            },
+            "sha256": "b85511e4fd8a2806bac2653a79741a68da1b14861a8b97868d24df207f793677",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1765.32417,
+                    1765.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z001_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 1
+            },
+            "sha256": "76c15af2803b44392bb6d6b15df00ef0c969089746f1b63fa4cadd5be4003d8d",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1765.82417,
+                    1765.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z002_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 2
+            },
+            "sha256": "0ba667f7d755d44496df24e03ffc886b9ab6fd535c8f71e8d5bca0693177ce12",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1766.32417,
+                    1766.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z003_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 3
+            },
+            "sha256": "ff834bab2fc089c1b548d7ce287af45baa699a1f181d660c59ee5650585fcec3",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1766.82417,
+                    1766.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z004_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 4
+            },
+            "sha256": "c47d77db0a9c89822867a1b0a3ea32a4e0f5931b140a04efdce7caae05483515",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1767.32417,
+                    1767.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z005_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 5
+            },
+            "sha256": "078baae54ceffee3dfa21669a45a0bf3fa1319699659b2fe9460d6369b3cea11",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1767.82417,
+                    1767.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z006_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 6
+            },
+            "sha256": "5180764107a1d066367dee30d37f461eb2f87a862ecad1d098e38d5e465c1ea0",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1768.32417,
+                    1768.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z007_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 7
+            },
+            "sha256": "ddf113b197ca40a626cc0b53414abfb58e857e4d285cf3853f8fe80eb0585f5b",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1768.82417,
+                    1768.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z008_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 8
+            },
+            "sha256": "070b0061398818a76f748e52c561b5d14189219136197300ca74a91fb82bd455",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1769.32417,
+                    1769.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z009_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 9
+            },
+            "sha256": "a33d4e863f8e6dcc0a8d7b0e9e236d6a1cd11dc0aad96eb30fdaeb51c8516605",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1769.82417,
+                    1769.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z010_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 10
+            },
+            "sha256": "41370ce97b59d0d8b98c6e574340f80ce0ed63387eadfda38dacd4257de843d0",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1770.32417,
+                    1770.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z011_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 11
+            },
+            "sha256": "a4d2fd103d756bbc7acae7de5c4ba055cb50cd27a950f555939790b40242adb6",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1770.82417,
+                    1770.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z012_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 12
+            },
+            "sha256": "f977eb543881bacc7e247e5deadc0f2e716a10992304a0a6f60c0dd55f7ac7fc",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1771.32417,
+                    1771.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z013_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 13
+            },
+            "sha256": "951e49f556aeda9629a558555167f152df200fcaec6b45f5864fdcb3b64fcb15",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1771.82417,
+                    1771.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z014_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 14
+            },
+            "sha256": "df74f00690aabc907ef25311e17ad2a8e17ab15b377734cbef717f5d076ed1f8",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1772.32417,
+                    1772.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z015_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 15
+            },
+            "sha256": "2f2d536d8226408a16cf94c425271db3c65da9352b7c0ca6b536c71220448a67",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1772.82417,
+                    1772.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z016_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 16
+            },
+            "sha256": "122d83d710be0d1f900b10f59c0bc4128b0a2a66ae4ca1b4748e6c2f34a5cf93",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1773.32417,
+                    1773.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z017_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 17
+            },
+            "sha256": "94d204e68585360562a9dcbff0bef41afaa279a9efaab7a4e8d3bca7fa53bce5",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1773.82417,
+                    1773.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z018_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 18
+            },
+            "sha256": "a4fec87cc0fc383055671cf81c272bf1dcf8909fca1f0e95479143527ac60889",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1774.32417,
+                    1774.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z019_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 19
+            },
+            "sha256": "feee316abadbd46f6dd27f9b77959374c3f3cee72640bfe599bf12f45fd79a50",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1774.82417,
+                    1774.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z020_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 20
+            },
+            "sha256": "4b89eff7d4e25b99cfd9265a87d3edb58aa1ee17637d6ba39537627f59e47e96",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1775.32417,
+                    1775.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z021_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 21
+            },
+            "sha256": "59520d1bd806e7332afce299d57c9c1d89a30120b044947f27cc082fbc9ed570",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1775.82417,
+                    1775.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z022_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 22
+            },
+            "sha256": "95469e402dd568df92d63d2e70a97afce770b738e2cdfff628f8eccfe016392f",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1776.32417,
+                    1776.32417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z023_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 23
+            },
+            "sha256": "7cb26f7d97d1b527a3a745a91bffde2b496e5cdbc7fb324385b798ae865ce2a3",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        },
+        {
+            "coordinates": {
+                "xc": [
+                    100688.6171875,
+                    100688.6171875
+                ],
+                "yc": [
+                    43243.875,
+                    43243.875
+                ],
+                "zc": [
+                    1776.82417,
+                    1776.82417
+                ]
+            },
+            "file": "file:///Volumes/imaging/czbiohub-imaging/raw_frames/ISP-2019-08-28-14-30-00-0001/im_c002_z024_t000_p000.png",
+            "indices": {
+                "c": 0,
+                "r": 0,
+                "z": 24
+            },
+            "sha256": "833acfd71478560812f078d3034aac2044eb2d79e1850caa3e988b67995adb00",
+            "tile_format": "PNG",
+            "tile_shape": {
+                "x": 2048,
+                "y": 2048
+            }
+        }
+    ],
+    "version": "0.1.0"
+}

@@ -81,8 +81,10 @@ def make_experiment_csv(
                         rnd.append(r)
                         channel.append(chan_idx)
                         z.append(frame.slice_idx)
-                        file_path.append(os.path.join(frame.frames_global.storage_dir, frame.file_name))
-                        #sha.append(frame.sha256)
+                        # Clean any windows file path seps before adding path
+                        fp = os.path.join(frame.frames_global.storage_dir, frame.file_name)
+                        clean_fp = os.path.join(*fp.split('\\'))
+                        file_path.append(clean_fp)
                         xc_min.append(frame.metadata_json[meta_keys['key']][meta_keys['xpos_um']])
                         xc_max.append(xc_min[-1] + im_width * pixel_size)
                         yc_min.append(frame.metadata_json[meta_keys['key']][meta_keys['ypos_um']])
@@ -108,7 +110,9 @@ def _calc_checksums(file_names):
     checksums = []
 
     for file in file_names:
-        filename = os.path.join('/Volumes/imaging/czbiohub-imaging', file)
+        # We need to replace any windows file separators with the proper separator
+        cleaned_filename = os.path.join(*file.split('\\'))
+        filename = os.path.join('/Volumes/imaging/czbiohub-imaging', cleaned_filename)
         with open(filename,"rb") as f:
             bytes = f.read() # read entire file as bytes
             readable_hash = hashlib.sha256(bytes).hexdigest();
