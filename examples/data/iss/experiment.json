@@ -1,0 +1,9 @@
+{
+    "version": "5.0.0",
+    "images": {
+        "primary": "primary.json",
+        "stain": "stain.json"
+    },
+    "extras": {},
+    "codebook": "codebook.json"
+}

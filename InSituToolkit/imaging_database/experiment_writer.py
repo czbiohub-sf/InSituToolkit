@@ -1,7 +1,9 @@
 from os import path
 import sys
 import subprocess
-from typing import List
+from typing import List, Union
+
+import numpy as np
 
 from ._make_experiment_csv import make_experiment_csv
 
@@ -10,7 +12,7 @@ def write_experiment(
                      db_credentials:str, output_folder:str, image_ids,
                      spot_channels:List[str], stain_channels:List[str] = None,
                      nuc_channels:List[str] = None, metadata_format:str = 'micromanager',
-                     positions:List[int] = [0], time:int=0,
+                     positions:List[int] = [0], time:int=0, z_slices:Union[None, List[int]] = None,
                      data_path:str = '/Volumes/imaging/czbiohub-imaging/'
                     ):
     """
@@ -38,6 +40,10 @@ def write_experiment(
         Index of the position to download. The default value is 0.
     time : int
         Index of the time point to download. The default value is 0.
+    z_slices : Union[None, List[int]]
+        Array of z slices indices to include. Can use a 1D array to use same z slices for each round.
+        Can use a 2D array where the first dimension is the round index to use different z slice indices
+        for each round. Use None if grabbing all z slices. Default value is None
     data_path : str
         Path to the image store volume
     """
@@ -46,7 +52,7 @@ def write_experiment(
     tile_width, tile_height = make_experiment_csv(
                                                   db_credentials, spots_file_path, image_ids,
                                                   spot_channels, metadata_format, positions, time,
-                                                  data_path
+                                                  z_slices, data_path
     )
     csv_args = 'primary ' + spots_file_path
 
@@ -54,7 +60,8 @@ def write_experiment(
         stain_file_path = path.join(output_folder, 'stain.csv')
         _, _ = make_experiment_csv(
                             db_credentials, stain_file_path, image_ids,
-                            stain_channels, metadata_format, positions, time
+                            stain_channels, metadata_format, positions, time,
+                            z_slices, data_path
         )
 
         csv_args += ' --csv-file stain ' + stain_file_path
@@ -63,7 +70,8 @@ def write_experiment(
         stain_file_path = path.join(output_folder, 'nuclei.csv')
         _, _ = make_experiment_csv(
                             db_credentials, stain_file_path, image_ids,
-                            nuc_channels, metadata_format, positions, time
+                            nuc_channels, metadata_format, positions, time,
+                            z_slices, data_path
         )
 
         csv_args += ' --csv-file nuclei ' + stain_file_path

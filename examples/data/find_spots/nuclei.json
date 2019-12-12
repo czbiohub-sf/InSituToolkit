@@ -1,0 +1,13 @@
+{
+    "contents": {
+        "fov_000": "nuclei-fov_000.json",
+        "fov_001": "nuclei-fov_001.json",
+        "fov_002": "nuclei-fov_002.json",
+        "fov_003": "nuclei-fov_003.json",
+        "fov_004": "nuclei-fov_004.json",
+        "fov_005": "nuclei-fov_005.json",
+        "fov_006": "nuclei-fov_006.json"
+    },
+    "extras": null,
+    "version": "0.1.0"
+}
