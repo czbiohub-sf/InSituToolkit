@@ -1,5 +1,5 @@
 import numpy as np
-from skimage import io, img_as_uint
+import skimage as sk
 from starfish import ImageStack
 import string
 
@@ -15,8 +15,9 @@ def stack_from_tif(file_name: string ) -> ImageStack:
     -------
     ImageStack
     """
-    image = io.imread(file_name)
-    img_num = np.array(image, dtype=np.uint16)
+    image = sk.io.imread(file_name)
+    image = sk.img_as_float(image)
+    img_num = np.array(image)
     img_dim = len(np.shape(img_num))
     [img_ch, img_y, img_x] = [1, 1, 1]
 
