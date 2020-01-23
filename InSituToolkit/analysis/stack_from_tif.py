@@ -5,11 +5,11 @@ import string
 
 def stack_from_tif(file_name: string ) -> ImageStack:
     """
-    Returns an ImageStack object from a tif file
+    Returns a starfish ImageStack object from a tif file
     Parameters
     ----------
     file_name: string
-        Location of a tif file
+        Absolute or relative directory location of a tif file
 
     Returns
     -------
