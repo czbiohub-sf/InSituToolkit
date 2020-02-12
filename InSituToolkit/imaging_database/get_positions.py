@@ -9,7 +9,7 @@ def get_positions(db_credentials: str, dataset_serial: str):
     Parameters
     ----------
     db_credentials: str
-        Databse login credentials for the current user
+        Absolute url to location of .json credentials
     dataset_serial: str
         dataset_serial field of a dataset in the database
 

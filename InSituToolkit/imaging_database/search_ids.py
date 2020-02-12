@@ -8,12 +8,12 @@ def search_ids(db_credentials: str, string: str):
     Parameters
     ----------
     db_credentials: str
-        User credentials for the current session
+        Absolute url to location of .json credentials
     string: str
         string to match to dataset id's
 
     Returns
-    -------
+    -------s
     List[string] - list of dataset id's that contain the specified string
     """
     credentials_str = db_utils.get_connection_str(db_credentials)
