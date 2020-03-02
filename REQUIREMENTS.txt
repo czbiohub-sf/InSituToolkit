@@ -1,4 +1,4 @@
 starfish>=0.1.10
 napari>=0.2.8
 imagingDB @ git+https://github.com/czbiohub/imagingDB@master#egg=imagingDB
-spacetx_biohub_writer @ git+https://github.com/kevinyamauchi/spacetx-biohub-writer@add_image_format_option#egg=spacetx_biohub_writer
+spacetx_biohub_writer @ git+https://github.com/spacetx/spacetx-biohub-writer#egg=spacetx_biohub_writer
