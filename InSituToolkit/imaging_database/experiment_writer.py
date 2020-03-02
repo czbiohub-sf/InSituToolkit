@@ -73,7 +73,8 @@ def write_experiment(
             '--tile-height ' + str(tile_height) + ' ' + \
             '--s3-prefix ' + data_path + ' ' + \
             '--output-dir ' + output_folder + ' ' + \
-            '--csv-file ' + csv_args + ' ' + \
-            '--image_format ' + img_format
+            '--image_format ' + img_format  + ' ' + \
+            '--csv-file ' + csv_args 
+            
 
     subprocess.call(cmd, shell=True)
