@@ -11,7 +11,8 @@ def write_experiment(
                      spot_channels:List[str], stain_channels:List[str] = None,
                      nuc_channels:List[str] = None, metadata_format:str = 'micromanager',
                      positions:List[int] = [0], time:int=0,
-                     data_path:str = '/Volumes/imaging/czbiohub-imaging/'
+                     data_path:str = '/Volumes/imaging/czbiohub-imaging/',
+                     img_format: str = 'PNG'
                     ):
     """
     Writes the spacetx format experiment files for analysis in starfish
@@ -72,6 +73,7 @@ def write_experiment(
             '--tile-height ' + str(tile_height) + ' ' + \
             '--s3-prefix ' + data_path + ' ' + \
             '--output-dir ' + output_folder + ' ' + \
-            '--csv-file ' + csv_args
+            '--csv-file ' + csv_args + ' ' + \
+            '--image_format ' + img_format
 
     subprocess.call(cmd, shell=True)
